@@ -10,9 +10,11 @@ exec:
 model:
   filename: models/generated.go
   package: models
-# resolver:
-#   filename: resolver.go
-#   type: Resolver
+resolver:
+  # goal: copy&paste from generated file
+  filename: tmp/resolver.go
+  package: tmp_resolver
+  type: Resolver
 models:
   Todo:
     model: github.com/lukehedger/gqlgen-todos/models.Todo
